@@ -56,7 +56,7 @@ app.get("/", function (req, res) {
         if (err) {
           console.log(err);
         } else {
-          console.log("Successfully savevd default items to DB.");
+          console.log("Successfully saved default items to DB.");
         }
       });
       res.redirect("/");
@@ -150,12 +150,11 @@ app.get("/about", function (req, res) {
   res.render("about");
 });
 
-let port = process.env.port;
+let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
 }
-app.listen(port);
-
-app.listen(port, function () {
-  console.log("Server started on port successfully");
+ 
+app.listen(port, function() {
+  console.log("Server started succesfully");
 });
