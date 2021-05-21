@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-rush:test123@cluster0.jttyk.mongodb.net/todolistDB", {
+mongoose.connect("mongodb+srv://pranavshah9323:9323163456@cluster0.2x4zd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useNewUrlParser: true
 });
 
